@@ -5,7 +5,7 @@ import axios from 'axios'
 function App() {
   const [todos, setTodos] = useState([]);
 
-  const res = axios.get('http://127.0.0.1:8000/api/')
+  const res = axios.get('http://127.0.0.1:8000/api/todos/')
     .then(res => { setTodos(res.data) }
     )
     .catch(err => {
